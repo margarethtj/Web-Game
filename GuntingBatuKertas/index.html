@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gunting Batu Kertas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- container header untuk penampilan skor dan user -->
+    <div class="header">
+        <div class="row">
+
+            <!-- bagian sebelah kiri Bot-->
+            <div class="col-2" style="background-color: red;">
+                <div class="row gambarkomp">
+                    <div class="col-12">
+                        <img src="gambar/bot.jpg">
+                    </div>
+                </div>
+                <div class="row title">
+                    <div class="col-12">Computer</div>
+                </div>
+            </div>
+
+            <!-- bagian skor komputer -->
+            <div class="col-3" id="skorkomp">
+                <h1 style="color: black; text-decoration: solid;">0</h1>
+            </div>
+
+            <!-- bagian tulisan VS -->
+            <div class="col-2" style="color: purple; text-decoration: solid;"> 
+                <h1>VS</h1>
+            </div>
+            
+            <!-- bagian skor player -->
+            <div class="col-3" id="skorplayer">
+                <h1 style="color: black; text-decoration: solid;">0</h1>
+            </div>
+
+            <!-- bagian sebelah kanan Player -->
+            <div class="col-2" style="background-color: green;">
+                <div class="row gambarplayer">
+                    <div class="col-12">
+                        <img src="gambar/player.jpg">
+                    </div>
+                </div>
+                <div class="row title">
+                    <div class="col-12">Player</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- container bot untuk tampilan gambar gunting batu kertas bot -->
+    <div class="bot">
+        <div class="row">
+
+            <!-- tulisan warna merah computer -->
+            <div class="col-12" style="background-color: red; color: white;">
+                Computer
+            </div>
+
+            <!-- gambar gunting batu dan kertas -->
+            <!-- gambar batu -->
+            <div class="col-4 bot" id="botbatu">
+                <img src="gambar/batu.png">
+            </div>
+            <!-- gambar gunting -->
+            <div class="col-4 bot" id="botgunting">
+                <img src="gambar/gunting.png">
+            </div>
+            <!-- gambar kertas -->
+            <div class="col-4 bot" id="botkertas">
+                <img src="gambar/kertas.png">
+            </div>
+            
+            <!-- tulisan warna merah computer -->
+            <div class="col-12" style="background-color: red; color: white;">
+                Computer
+            </div>
+
+        </div>
+    </div>
+
+    <!-- container tampilan hasil -->
+    <div class="hasil">
+        <div class="row">
+            <!-- gambar pemilihan komputer -->
+            <div class="col-4" id="pilihankomp">
+            </div>
+            <!-- tulisan pemenang -->
+            <div class="col-4">
+                <h1 id="pemenang" style="color: purple;">
+                    vs
+                </h1>
+            </div>
+            <!-- gambar permilihan player -->
+            <div class="col-4" id="pilihanplayer">
+            </div>
+        </div>
+    </div>
+
+    <!-- container player untuk tampilan gambar gunting baru kertas player -->
+    <div class="player">
+        <div class="row">
+
+            <!-- tulisan warna hijau player -->
+            <div class="col-12" style="background-color: green; color: white;">
+                Player
+            </div>
+
+            <!-- gambar gunting batu dan kertas -->
+            <!-- gambar kertas -->
+            <div class="col-4" id="playerkertas">
+                <img src="gambar/kertas.png" onclick="select(1)">
+            </div>
+            <!-- gambar gunting -->
+            <div class="col-4" id="playergunting">
+                <img src="gambar/gunting.png" onclick="select(2)">
+            </div>
+            <!-- gambar batu -->
+            <div class="col-4" id="playerbatu">
+                <img src="gambar/batu.png" onclick="select(3)">
+            </div>
+            
+            <!-- tulisan warna hijau player -->
+            <div class="col-12" style="background-color: green; color: white;">
+                Player
+            </div>
+        </div>  
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
